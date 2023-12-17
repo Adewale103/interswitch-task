@@ -1,4 +1,4 @@
-package org.interswitch.bookstore.dto;
+package org.interswitch.bookstore.dto.request;
 
 
 

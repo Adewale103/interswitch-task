@@ -1,7 +1,7 @@
-package org.interswitch.bookstore.dto;
+package org.interswitch.bookstore.dto.response;
 
-import jakarta.annotation.security.DenyAll;
 import lombok.*;
+import org.interswitch.bookstore.dto.request.PaymentRequest;
 
 import java.math.BigDecimal;
 

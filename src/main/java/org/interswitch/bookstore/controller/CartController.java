@@ -1,12 +1,10 @@
 package org.interswitch.bookstore.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.interswitch.bookstore.annotation.ValidateMultipart;
 import org.interswitch.bookstore.dto.*;
-import org.interswitch.bookstore.repository.CartRepository;
-import org.interswitch.bookstore.service.BookService;
+import org.interswitch.bookstore.dto.request.AddToCartRequest;
+import org.interswitch.bookstore.dto.response.AddToCartResponse;
 import org.interswitch.bookstore.service.CartService;
-import org.interswitch.bookstore.utils.AppendableReferenceUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

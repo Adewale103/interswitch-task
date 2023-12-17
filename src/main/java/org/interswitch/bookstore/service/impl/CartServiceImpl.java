@@ -2,8 +2,8 @@ package org.interswitch.bookstore.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.interswitch.bookstore.dto.AddToCartRequest;
-import org.interswitch.bookstore.dto.AddToCartResponse;
+import org.interswitch.bookstore.dto.request.AddToCartRequest;
+import org.interswitch.bookstore.dto.response.AddToCartResponse;
 import org.interswitch.bookstore.dto.CartItemDto;
 import org.interswitch.bookstore.entities.Book;
 import org.interswitch.bookstore.entities.CartItem;

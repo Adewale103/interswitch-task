@@ -1,7 +1,7 @@
 package org.interswitch.bookstore.service;
 
-import org.interswitch.bookstore.dto.PaymentRequest;
-import org.interswitch.bookstore.dto.PaymentResponse;
+import org.interswitch.bookstore.dto.request.PaymentRequest;
+import org.interswitch.bookstore.dto.response.PaymentResponse;
 import org.interswitch.bookstore.dto.PurchaseHistoryDto;
 
 import java.util.List;

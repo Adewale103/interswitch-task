@@ -2,15 +2,13 @@ package org.interswitch.bookstore.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.interswitch.bookstore.dto.PaymentRequest;
-import org.interswitch.bookstore.dto.PaymentResponse;
+import org.interswitch.bookstore.dto.request.PaymentRequest;
+import org.interswitch.bookstore.dto.response.PaymentResponse;
 import org.interswitch.bookstore.dto.PurchaseHistoryDto;
-import org.interswitch.bookstore.entities.CartItem;
 import org.interswitch.bookstore.entities.PurchaseHistory;
 import org.interswitch.bookstore.entities.ShoppingCart;
 import org.interswitch.bookstore.enums.PaymentMethod;
 import org.interswitch.bookstore.exception.GenericException;
-import org.interswitch.bookstore.exception.TokenException;
 import org.interswitch.bookstore.repository.CartRepository;
 import org.interswitch.bookstore.repository.PurchaseHistoryRepository;
 import org.interswitch.bookstore.service.PaymentService;
