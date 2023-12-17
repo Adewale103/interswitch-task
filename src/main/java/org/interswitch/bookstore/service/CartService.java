@@ -1,7 +1,7 @@
 package org.interswitch.bookstore.service;
 
-import org.interswitch.bookstore.dto.AddToCartRequest;
-import org.interswitch.bookstore.dto.AddToCartResponse;
+import org.interswitch.bookstore.dto.request.AddToCartRequest;
+import org.interswitch.bookstore.dto.response.AddToCartResponse;
 import org.interswitch.bookstore.dto.CartItemDto;
 
 import java.util.List;

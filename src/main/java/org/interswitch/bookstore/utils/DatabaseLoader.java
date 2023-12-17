@@ -1,7 +1,7 @@
 package org.interswitch.bookstore.utils;
 
 import lombok.RequiredArgsConstructor;
-import org.interswitch.bookstore.dto.BookRequest;
+import org.interswitch.bookstore.dto.request.BookRequest;
 import org.interswitch.bookstore.dto.request.RegisterRequest;
 import org.interswitch.bookstore.enums.Role;
 import org.interswitch.bookstore.service.AuthenticationService;

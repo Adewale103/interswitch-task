@@ -1,8 +1,6 @@
 package org.interswitch.bookstore.service.impl;
 
-import org.interswitch.bookstore.dto.AuthorRequest;
-import org.interswitch.bookstore.dto.AuthorResponse;
-import org.interswitch.bookstore.dto.BookResponse;
+import org.interswitch.bookstore.dto.request.AuthorRequest;
 import org.interswitch.bookstore.entities.Author;
 import org.interswitch.bookstore.entities.Book;
 import org.interswitch.bookstore.exception.GenericException;

@@ -2,7 +2,7 @@ package org.interswitch.bookstore.service;
 
 
 
-import org.interswitch.bookstore.dto.AuthorRequest;
+import org.interswitch.bookstore.dto.request.AuthorRequest;
 import org.interswitch.bookstore.entities.Author;
 
 import java.lang.reflect.InvocationTargetException;

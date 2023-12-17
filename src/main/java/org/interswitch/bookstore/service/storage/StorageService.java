@@ -1,7 +1,7 @@
 package org.interswitch.bookstore.service.storage;
 
 
-import org.interswitch.bookstore.dto.AmazonResponse;
+import org.interswitch.bookstore.dto.response.AmazonResponse;
 
 import java.io.IOException;
 import java.io.InputStream;
