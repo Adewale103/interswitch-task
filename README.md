@@ -31,6 +31,11 @@ the application:
 4. AWS_SECRET_ACCESS_KEY=*****
 5. application.security.jwt.secret-key=*****
 
+At the launch of the application, 10 books are preloaded into the database as well as a default user whose
+details can be used to log in and test endpoints via postman.
+
+Login Details: username: ade@gmail.com, password: Adewale@01
+
 Before getting started, ensure you have the following components installed:
 
 1. **This project was built using JDK 17, you would need JDK 17 installed on you local machine.**
