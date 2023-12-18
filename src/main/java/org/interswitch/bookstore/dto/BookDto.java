@@ -15,7 +15,7 @@ import java.util.List;
 public class BookDto {
     private String title;
     private String description;
-    private int isbn;
+    private String isbn;
     private int publicationYear;
     private long price;
     private LocalDate dateUploaded;

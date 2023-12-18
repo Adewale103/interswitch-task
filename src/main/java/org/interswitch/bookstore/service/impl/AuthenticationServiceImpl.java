@@ -7,10 +7,12 @@ import org.interswitch.bookstore.dto.request.RegisterRequest;
 import org.interswitch.bookstore.dto.response.AuthenticationResponse;
 import org.interswitch.bookstore.entities.User;
 import org.interswitch.bookstore.enums.TokenType;
+import org.interswitch.bookstore.exception.GenericException;
 import org.interswitch.bookstore.repository.UserRepository;
 import org.interswitch.bookstore.service.AuthenticationService;
 import org.interswitch.bookstore.service.JwtService;
 import org.interswitch.bookstore.service.RefreshTokenService;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,6 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import static org.interswitch.bookstore.utils.Constants.USER_ALREADY_EXIST;
 
 
 @Service @Transactional
@@ -32,6 +35,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private final RefreshTokenService refreshTokenService;
     @Override
     public AuthenticationResponse register(RegisterRequest request) {
+        if(userRepository.findByEmail(request.getEmail()).isPresent()){
+            throw new GenericException(USER_ALREADY_EXIST, HttpStatus.BAD_REQUEST);
+        }
         User user = User.builder()
                 .firstname(request.getFirstName())
                 .lastname(request.getLastName())

@@ -48,7 +48,8 @@ public class CartServiceImpl implements CartService {
     }
     @Override
     public List<CartItemDto> getCartItems(String cartReference) {
-        ShoppingCart cart = cartRepository.findById(AppendableReferenceUtils.getIdFrom(cartReference)).orElse(new ShoppingCart());
+        Long cartId = AppendableReferenceUtils.getIdFrom(cartReference);
+        ShoppingCart cart = cartRepository.findById(cartId).orElse(new ShoppingCart());
         if(Objects.isNull(cart.getItems())){
             return new ArrayList<>();
         }
