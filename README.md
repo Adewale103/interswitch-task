@@ -1,7 +1,6 @@
-# Interswitch-task
+## Interswitch-task
 A demo task for interswitch group
-
-# Book Management System using Spring Boot
+## Book Management System using Spring Boot
 The Book Management System, built with Spring Boot, facilitates an efficient book inventory with attributes including title, genre (limited to Fiction, Thriller, Mystery, Poetry, Horror, and Satire), ISBN code, author details, and year of publication. 
 Users can seamlessly search for books based on title, author, year of publication, or genre. The system incorporates a shopping cart for users to add and view selected books. 
 Checkout options include Web, USSD, and Transfer payment methods, with a simulated payment process. Additionally, users can conveniently access their purchase history. 
@@ -10,8 +9,8 @@ This concise and powerful system ensures a user-friendly experience in managing 
 ## Table of Contents
 - [Getting Started](#getting-started)
     - [Prerequisites Requirement](#prerequisites-requirement)
-    - [Optional Requirement](#optional-requirement)
     - [Installation](#installation)
+    - [Optional Requirement](#optional-requirement)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
@@ -21,16 +20,16 @@ This concise and powerful system ensures a user-friendly experience in managing 
 
 ### Prerequisites Requirement
 
-# Note:
+#### Note:
 Please note that the values of the following keys in the application.properties
 have been sent via email. Kindly add to the application.properties before launching 
 the application:
 
-AWS_REGION=*****
-SERVICE_BUCKET_NAME=*****
-AWS_ACCESS_KEY_ID=*****
-AWS_SECRET_ACCESS_KEY=*****
-application.security.jwt.secret-key=*****
+1. AWS_REGION=*****
+2. SERVICE_BUCKET_NAME=*****
+3. AWS_ACCESS_KEY_ID=*****
+4. AWS_SECRET_ACCESS_KEY=*****
+5. application.security.jwt.secret-key=*****
 
 Before getting started, ensure you have the following components installed:
 
@@ -39,20 +38,6 @@ Before getting started, ensure you have the following components installed:
 - [Java Development Kit (JDK 17)](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [Maven](https://maven.apache.org/download.cgi)
 
-
-### Optional Requirement (To run with docker file)
-
-1. **Docker.**
-- **A docker file is on the project root directory, you would need docker installed on your local machine to run the docker file.**
-- **The first command builds the docker image.**
-- **The second command runs the docker build.**
-
-    ```bash
-   docker build -t book-store:latest . 
-   
-   docker run -d -p 6082:6082 book-store:latest
-    ```
-- [Docker](https://www.docker.com/products/docker-desktop/)
 
 ### Installation
 
@@ -80,6 +65,20 @@ mvn spring-boot:run
 ## Access the Application
 
 Open your browser and navigate to `http://localhost:8086` to access the Book Management System.
+
+### Optional Requirement (To run with docker file)
+
+1. **Docker.**
+- **A docker file is on the project root directory, you would need docker installed on your local machine to run the docker file.**
+- **The first command builds the docker image.**
+- **The second command runs the docker build.**
+
+    ```bash
+   docker build -t book-store:latest . 
+   
+   docker run -d -p 6082:6082 book-store:latest
+    ```
+- [Docker](https://www.docker.com/products/docker-desktop/)
 
 ## Technologies Used
 
